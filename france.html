@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>法语发音助手</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 8px 16px;
+            margin-right: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .output {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>法语发音助手</h1>
+    
+    <textarea id="frenchInput" placeholder="输入法语单词或句子..."></textarea>
+    
+    <div>
+        <button id="convertBtn">转换为中文谐音</button>
+        <button id="speakBtn">朗读法语</button>
+    </div>
+    
+    <div class="output">
+        <h3>中文谐音:</h3>
+        <div id="chineseOutput"></div>
+    </div>
+
+    <!-- 引入JavaScript文件 -->
+    <script src="app.js"></script>
+</body>
+</html>
